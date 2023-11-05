@@ -1,0 +1,165 @@
+body{
+    background-color: #134812;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    flex-direction: column;
+}
+header{
+    background-image: url(../assets/img/fondo.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+h1{
+    margin: 0px;
+    font-size: 23px;
+    font-family: 'Oswald', sans-serif;
+}
+.logo{
+    width: 160px;
+    height: 112px;
+}
+.imgTitle{
+    display: flex;
+    background-color: white;
+    border: 0.5px solid black;
+    box-shadow: 5px 5px 1px rgba(0, 0, 0, 0.5);
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    height: 160px;
+    margin: 1px;
+    margin-bottom: 8px;
+    border-radius: 30px;
+}
+/* Estilos para el botón del menú desplegable */
+.menu {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.dropbtn {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    width: 50%;
+}
+
+/* Estilos para el contenido desplegable */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    
+}
+
+.dropdown-content a {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    color: #333;
+}
+
+/* Cambia el color del enlace al pasar el cursor por encima */
+.dropdown-content a:hover {
+    background-color: #3498db;
+    color: white;
+}
+
+/* Muestra el contenido desplegable cuando pasas el cursor sobre el botón */
+.menu:hover .dropdown-content {
+    display: block;
+}
+main{
+    background-color: beige;
+}
+footer{
+    background-color: rgb(58, 58, 58);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 212px;
+    margin-top: 5px;
+}
+.pFooter{
+    border: 1px solid black;
+    border-radius: 7px;
+    background: gray;
+    padding: 3px;
+    font-family: 'Questrial', sans-serif;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid black;
+    width: 340px;
+    
+    margin-top: 5px;
+    margin-bottom: 5px;
+    
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5px;
+}
+label{
+    margin: 5px;
+    margin-bottom: 5px;
+}
+input{
+    margin-bottom: 2.5px;
+    margin: 5px;
+}
+
+#opciones{
+    margin: 5px;
+    margin-top: 15px;
+}
+.opcionesDesplegable{
+    margin: 3px;
+    margin-top: 15px;
+}
+h2{
+    font-family: 'Oswald', sans-serif;
+}
+label{
+    font-family: 'Questrial', sans-serif;
+}
+.divBotones{
+    margin: 10px;
+}
+.botones{
+    margin: 3px;
+}
+@media (min-width: 768px){
+    
+    form{
+        width: 400px;
+        height: 500px;
+    }
+    footer{
+        height: 146px;
+    }
+}
+#linkgit{
+    color: green;
+}
+@media (min-width: 1300px){
+    main{
+        height: 601px;
+    }
+    form{
+        margin-top: 45px;
+    }
+}

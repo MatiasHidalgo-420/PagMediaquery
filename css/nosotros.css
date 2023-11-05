@@ -1,0 +1,209 @@
+body{
+    background-color: #134812;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    flex-direction: column;
+}
+header{
+    background-image: url(../assets/img/fondo.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+h1{
+    margin: 0px;
+    font-size: 23px;
+    font-family: 'Oswald', sans-serif;
+}
+.logo{
+    width: 160px;
+    height: 112px;
+}
+.imgTitle{
+    display: flex;
+    background-color: white;
+    border: 0.5px solid black;
+    box-shadow: 5px 5px 1px rgba(0, 0, 0, 0.5);
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    height: 160px;
+    margin: 1px;
+    margin-bottom: 8px;
+    border-radius: 30px;
+}
+/* Estilos para el botón del menú desplegable */
+.menu {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.dropbtn {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    width: 50%;
+}
+
+/* Estilos para el contenido desplegable */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    color: #333;
+}
+
+/* Cambia el color del enlace al pasar el cursor por encima */
+.dropdown-content a:hover {
+    background-color: #3498db;
+    color: white;
+}
+
+/* Muestra el contenido desplegable cuando pasas el cursor sobre el botón */
+.menu:hover .dropdown-content {
+    display: block;
+}
+main{
+        background: wheat;
+}
+.divs{
+    background-color: beige;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    border-radius: 15px;
+    box-shadow: 1px 3px 0px 2px rgba(0, 0, 0, 0.5);
+    border: 1px solid black
+}
+.imgs{
+    width: 170px ;
+    height: 170px ;
+    margin: 5px;
+    box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.5);
+    border-radius: 30px;
+    border: 1px solid black
+}
+.relleno{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: lightgray;
+    width: 99%;
+    margin: 5px;
+    box-shadow: 0px 1px 7px rgba(0, 0, 0, 0.5);
+}
+ul {
+    
+    padding: 0; 
+    margin: 0; 
+   
+    
+}
+
+li {
+    margin-bottom: 10px;
+    margin-left: 20px;
+    font-family: 'Questrial', sans-serif;
+
+}
+h1 p{
+    margin-left: 3px;
+}
+#luciah4{
+    text-align: center;
+}
+footer{
+    background-color: rgb(58, 58, 58);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 126px;
+    margin-top: 5px;
+}
+.pFooter{
+    border: 1px solid black;
+    border-radius: 7px;
+    background: gray;
+    padding: 3px;
+    font-family: 'Questrial', sans-serif;
+}
+@media (min-width: 768px){
+    div.relleno ul {
+        width: 100%;
+    }
+    div.relleno ul li {
+        margin: 5px 0; 
+        margin-left: 20px;
+        font-size: 17px;
+    }
+    h4{
+        font-size: 19px;
+    }
+}
+@media (min-width: 1024px){
+    main {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Ajusta el tamaño de las columnas según tus preferencias */
+        gap: 20px; /* Espacio entre las tarjetas */
+        height: 539px;
+       
+      }
+      .divs {
+        background-color: beige;
+        display: grid;
+        grid-template-rows: auto 1fr;
+        border-radius: 15px;
+        box-shadow: 1px 3px 0px 2px rgba(0, 0, 0, 0.5);
+        border: 1px solid black;
+        justify-items: center;
+        width: 312px;
+      }
+      .relleno{
+        width: 250px;
+       
+      }
+      div.relleno ul li {
+        margin: 10px 0; 
+        margin-left: 20px;
+    }
+    .imgs{
+        margin-top: 20px;
+    }
+     
+}
+#linkgit{
+    color: green;
+}
+@media (min-width: 1300px){
+    main{
+        display: flex;
+        justify-content: space-around;
+        height: 626px;
+        
+    }
+    .imgs{
+        width: 200px;
+        height: 200px;
+    }
+    li{
+        font-size: 18px;
+}
+h4{
+    font-size: 20px;
+}
+}
